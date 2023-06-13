@@ -60,3 +60,26 @@ This is sentence number 8
 This is sentence number 9
 This is sentence number 10
 #+end_example
+
+#+begin_src ruby :results output :tangle 05.rb
+puts 'Starting Guessing Game'
+num = rand(10)
+guessed = false
+until guessed
+    puts 'Type a number between 0-9'
+    guess = gets
+    guess = guess.to_i
+    if guess == num
+        puts 'You guessed it!'
+        guessed = true
+    else
+        puts 'Your guess is high!' if guess > num
+        puts 'Your guess is low!' if guess < num
+    end
+end
+#+end_src
+
+#+RESULTS:
+: Starting Guessing Game
+: Type a number between 0-9
+: Your guess is low!
