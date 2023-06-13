@@ -1,0 +1,62 @@
+#+PROPERTY: header-args :tangle yes
+
+* Ruby
+#+begin_src ruby :results output :tangle 01.rb
+puts 'Hello, world.'
+#+end_src
+
+#+RESULTS:
+: Hello, world.
+
+#+begin_src ruby :results output :tangle 02.rb
+str = 'Hello, Ruby.'
+puts "Index of 'Ruby' in '#{str}' is #{str.index('Ruby')}"
+#+end_src
+
+#+RESULTS:
+: Index of 'Ruby' in 'Hello, Ruby.' is 7
+
+#+begin_src ruby :results output :tangle 03.rb
+i = 0
+until i == 10
+  puts 'Anand Magaji'
+  i = i + 1
+end
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+Anand Magaji
+#+end_example
+
+
+#+begin_src ruby :results output :tangle 04.rb
+j = 0
+until j == 10
+  j = j + 1
+  puts "This is sentence number #{j}"
+end
+#+end_src
+
+#+RESULTS:
+#+begin_example
+This is sentence number 1
+This is sentence number 2
+This is sentence number 3
+This is sentence number 4
+This is sentence number 5
+This is sentence number 6
+This is sentence number 7
+This is sentence number 8
+This is sentence number 9
+This is sentence number 10
+#+end_example
